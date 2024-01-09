@@ -1,5 +1,9 @@
+import { Searchbar } from "konsta/react";
+
 const Search = () => {
-  return <div>Search</div>;
+  const handleSearch = () => {};
+
+  return <Searchbar onInput={handleSearch} onClear={() => {}} />;
 };
 
 export default Search;

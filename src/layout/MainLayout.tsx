@@ -5,7 +5,7 @@ interface IM {
 }
 
 const MainLayout: FC<IM> = ({ children }) => {
-  return <div>{children}</div>;
+  return <div className="p-4">{children}</div>;
 };
 
 export default MainLayout;
