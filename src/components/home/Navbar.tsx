@@ -14,10 +14,10 @@ const MyNavbar = () => {
       }
       subnavbar={
         <Segmented raised rounded>
-          <SegmentedButton className="flex gap-2">
+          <SegmentedButton active className="flex gap-2">
             O'rganyapman <Badge>10</Badge>
           </SegmentedButton>
-          <SegmentedButton active className="flex gap-2">
+          <SegmentedButton className="flex gap-2">
             Bilaman <Badge>30</Badge>
           </SegmentedButton>
         </Segmented>

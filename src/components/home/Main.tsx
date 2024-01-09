@@ -7,7 +7,7 @@ const Main = () => {
   return (
     <main>
       <Fab
-        className="fixed bg-primary w-8 h-8 rounded-full right-4-safe bottom-24-safe z-40"
+        className="fixed bg-primary  rounded-full right-4-safe bottom-24-safe z-40"
         icon={<RiAddFill className="text-white" />}
       />
       <BlockTitle>
