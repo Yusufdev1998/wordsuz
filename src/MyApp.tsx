@@ -2,6 +2,8 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import { App } from "konsta/react";
 import Home from "./pages/Home";
+import Exercise from "./pages/Exercise";
+import Practice from "./pages/Practice";
 
 const router = createBrowserRouter([
   {
@@ -9,8 +11,12 @@ const router = createBrowserRouter([
     element: <Home />,
   },
   {
-    path: "/about",
-    element: <h1>About</h1>,
+    path: "/exercise",
+    element: <Exercise />,
+  },
+  {
+    path: "/practice",
+    element: <Practice />,
   },
 ]);
 
