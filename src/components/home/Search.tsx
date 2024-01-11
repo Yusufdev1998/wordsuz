@@ -1,5 +1,7 @@
+import { Searchbar } from "konsta/react";
+
 const Search = () => {
-  return <div>Search</div>;
+  return <Searchbar />;
 };
 
 export default Search;

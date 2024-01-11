@@ -1,7 +1,11 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-
+import { Provider } from "react-redux";
 import { App } from "konsta/react";
 import Home from "./pages/Home";
+import ExerciseWord from "./pages/ExerciseWord";
+import PracticeWordGroup from "./pages/PracticeWordGroup";
+import MyPopup from "./components/base/MyPopup";
+import { store } from "./redux/store";
 
 const router = createBrowserRouter([
   {
@@ -9,16 +13,23 @@ const router = createBrowserRouter([
     element: <Home />,
   },
   {
-    path: "/about",
-    element: <h1>About</h1>,
+    path: "/exercise-word",
+    element: <ExerciseWord />,
+  },
+  {
+    path: "/practice-word-group",
+    element: <PracticeWordGroup />,
   },
 ]);
 
 const MyApp = () => {
   return (
-    <App theme="material">
-      <RouterProvider router={router}></RouterProvider>
-    </App>
+    <Provider store={store}>
+      <App theme="material">
+        <RouterProvider router={router}></RouterProvider>
+        <MyPopup />
+      </App>
+    </Provider>
   );
 };
 

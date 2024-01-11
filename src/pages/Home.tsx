@@ -1,13 +1,16 @@
+import { Page } from "konsta/react";
 import FooterNav from "../components/base/FooterNav";
 import Main from "../components/home/Main";
-import Navbar from "../components/home/Navbar";
+import MyNavbar from "../components/home/Navbar";
 
 const Home = () => {
   return (
     <>
-      <Navbar />
-      <Main />
-      <FooterNav />
+      <Page>
+        <MyNavbar />
+        <Main />
+        <FooterNav />
+      </Page>
     </>
   );
 };
