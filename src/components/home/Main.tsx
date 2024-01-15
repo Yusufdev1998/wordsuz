@@ -1,15 +1,12 @@
-import { BlockTitle, Button, Fab, List, ListItem } from "konsta/react";
+import { BlockTitle, Button, List, ListItem } from "konsta/react";
 import { FcNext, FcSpeaker } from "react-icons/fc";
 import { FaStar } from "react-icons/fa";
-import { RiAddFill } from "react-icons/ri";
+import AddWordBtn from "./AddWordBtn";
 
 const Main = () => {
   return (
     <main>
-      <Fab
-        className="fixed bg-primary  rounded-full right-4-safe bottom-24-safe z-40"
-        icon={<RiAddFill className="text-white" />}
-      />
+      <AddWordBtn />
       <BlockTitle>
         Yangi so'zlar{" "}
         <Button inline tonal small>

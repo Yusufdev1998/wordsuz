@@ -2,8 +2,11 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import { App } from "konsta/react";
 import Home from "./pages/Home";
-import Exercise from "./pages/Exercise";
-import Practice from "./pages/Practice";
+
+import { Provider } from "react-redux";
+import { store } from "./redux/store";
+import PracticeWord from "./pages/PracticeWord";
+import PracticeWordGroup from "./pages/PracticeWordGroup";
 
 const router = createBrowserRouter([
   {
@@ -11,20 +14,22 @@ const router = createBrowserRouter([
     element: <Home />,
   },
   {
-    path: "/exercise",
-    element: <Exercise />,
+    path: "/practice-word",
+    element: <PracticeWord />,
   },
   {
-    path: "/practice",
-    element: <Practice />,
+    path: "/practice-group",
+    element: <PracticeWordGroup />,
   },
 ]);
 
 const MyApp = () => {
   return (
-    <App theme="material">
-      <RouterProvider router={router}></RouterProvider>
-    </App>
+    <Provider store={store}>
+      <App theme="material">
+        <RouterProvider router={router}></RouterProvider>
+      </App>
+    </Provider>
   );
 };
 
