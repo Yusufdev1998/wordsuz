@@ -1,0 +1,261 @@
+{
+  "word_bank": [
+    {
+      "id": 1,
+      "word": "Help",
+      "imgURL": "./help.jpeg",
+      "uzbek": [
+        "Yordam",
+        "Yordam bermoq"
+      ],
+      "pronunciation": "/hɛlp/",
+      "meanings": [
+        {
+          "partOfSpeech": "verb",
+          "definition": {
+            "english": "To make it easier for someone to do something by offering one's services or resources.",
+            "uzbek": "Yordam berish - biror kishiga o‘z xizmatlari yoki resurslarini taklif qilib, biror narsani qilishni osonlashtirish."
+          },
+          "example": {
+            "english": "She helped her brother with his homework.",
+            "uzbek": "U o‘z ukasiga uy vazifasida yordam berdi."
+          }
+        },
+        {
+          "partOfSpeech": "noun",
+          "definition": {
+            "english": "The action of helping someone; assistance.",
+            "uzbek": "Yordam - biror kishiga yordam berish harakati; ko‘mak."
+          },
+          "example": {
+            "english": "I offered my help to the neighbors.",
+            "uzbek": "Men qo‘shnilarimga yordam taklif qildim."
+          }
+        }
+      ],
+      "additionalElements": {
+        "synonyms": [
+          "assist",
+          "aid",
+          "support",
+          "facilitate",
+          "benefit"
+        ],
+        "antonyms": [
+          "hinder",
+          "obstruct",
+          "impede",
+          "thwart",
+          "hamper"
+        ]
+      },
+      "homophones": []
+    }
+  ],
+  "user_bank": [
+    {
+      "id": 1,
+      "word": "Help",
+      "imgURL": "./help.jpeg",
+      "uzbek": [
+        "Yordam",
+        "Yordam bermoq"
+      ],
+      "pronunciation": "/hɛlp/",
+      "meanings": [
+        {
+          "partOfSpeech": "verb",
+          "definition": {
+            "english": "To make it easier for someone to do something by offering one's services or resources.",
+            "uzbek": "Yordam berish - biror kishiga o‘z xizmatlari yoki resurslarini taklif qilib, biror narsani qilishni osonlashtirish."
+          },
+          "example": {
+            "english": "She helped her brother with his homework.",
+            "uzbek": "U o‘z ukasiga uy vazifasida yordam berdi."
+          }
+        },
+        {
+          "partOfSpeech": "noun",
+          "definition": {
+            "english": "The action of helping someone; assistance.",
+            "uzbek": "Yordam - biror kishiga yordam berish harakati; ko‘mak."
+          },
+          "example": {
+            "english": "I offered my help to the neighbors.",
+            "uzbek": "Men qo‘shnilarimga yordam taklif qildim."
+          }
+        }
+      ],
+      "additionalElements": {
+        "synonyms": [
+          "assist",
+          "aid",
+          "support",
+          "facilitate",
+          "benefit"
+        ],
+        "antonyms": [
+          "hinder",
+          "obstruct",
+          "impede",
+          "thwart",
+          "hamper"
+        ]
+      },
+      "homophones": []
+    },
+    {
+      "id": 1,
+      "word": "Help",
+      "imgURL": "./help.jpeg",
+      "uzbek": [
+        "Yordam",
+        "Yordam bermoq"
+      ],
+      "pronunciation": "/hɛlp/",
+      "meanings": [
+        {
+          "partOfSpeech": "verb",
+          "definition": {
+            "english": "To make it easier for someone to do something by offering one's services or resources.",
+            "uzbek": "Yordam berish - biror kishiga o‘z xizmatlari yoki resurslarini taklif qilib, biror narsani qilishni osonlashtirish."
+          },
+          "example": {
+            "english": "She helped her brother with his homework.",
+            "uzbek": "U o‘z ukasiga uy vazifasida yordam berdi."
+          }
+        },
+        {
+          "partOfSpeech": "noun",
+          "definition": {
+            "english": "The action of helping someone; assistance.",
+            "uzbek": "Yordam - biror kishiga yordam berish harakati; ko‘mak."
+          },
+          "example": {
+            "english": "I offered my help to the neighbors.",
+            "uzbek": "Men qo‘shnilarimga yordam taklif qildim."
+          }
+        }
+      ],
+      "additionalElements": {
+        "synonyms": [
+          "assist",
+          "aid",
+          "support",
+          "facilitate",
+          "benefit"
+        ],
+        "antonyms": [
+          "hinder",
+          "obstruct",
+          "impede",
+          "thwart",
+          "hamper"
+        ]
+      },
+      "homophones": []
+    },
+    {
+      "word": "Help",
+      "imgURL": "./help.jpeg",
+      "uzbek": [
+        "Yordam",
+        "Yordam bermoq"
+      ],
+      "pronunciation": "/hɛlp/",
+      "meanings": [
+        {
+          "partOfSpeech": "verb",
+          "definition": {
+            "english": "To make it easier for someone to do something by offering one's services or resources.",
+            "uzbek": "Yordam berish - biror kishiga o‘z xizmatlari yoki resurslarini taklif qilib, biror narsani qilishni osonlashtirish."
+          },
+          "example": {
+            "english": "She helped her brother with his homework.",
+            "uzbek": "U o‘z ukasiga uy vazifasida yordam berdi."
+          }
+        },
+        {
+          "partOfSpeech": "noun",
+          "definition": {
+            "english": "The action of helping someone; assistance.",
+            "uzbek": "Yordam - biror kishiga yordam berish harakati; ko‘mak."
+          },
+          "example": {
+            "english": "I offered my help to the neighbors.",
+            "uzbek": "Men qo‘shnilarimga yordam taklif qildim."
+          }
+        }
+      ],
+      "additionalElements": {
+        "synonyms": [
+          "assist",
+          "aid",
+          "support",
+          "facilitate",
+          "benefit"
+        ],
+        "antonyms": [
+          "hinder",
+          "obstruct",
+          "impede",
+          "thwart",
+          "hamper"
+        ]
+      },
+      "homophones": [],
+      "id": 2
+    },
+    {
+      "word": "Help",
+      "imgURL": "./help.jpeg",
+      "uzbek": [
+        "Yordam",
+        "Yordam bermoq"
+      ],
+      "pronunciation": "/hɛlp/",
+      "meanings": [
+        {
+          "partOfSpeech": "verb",
+          "definition": {
+            "english": "To make it easier for someone to do something by offering one's services or resources.",
+            "uzbek": "Yordam berish - biror kishiga o‘z xizmatlari yoki resurslarini taklif qilib, biror narsani qilishni osonlashtirish."
+          },
+          "example": {
+            "english": "She helped her brother with his homework.",
+            "uzbek": "U o‘z ukasiga uy vazifasida yordam berdi."
+          }
+        },
+        {
+          "partOfSpeech": "noun",
+          "definition": {
+            "english": "The action of helping someone; assistance.",
+            "uzbek": "Yordam - biror kishiga yordam berish harakati; ko‘mak."
+          },
+          "example": {
+            "english": "I offered my help to the neighbors.",
+            "uzbek": "Men qo‘shnilarimga yordam taklif qildim."
+          }
+        }
+      ],
+      "additionalElements": {
+        "synonyms": [
+          "assist",
+          "aid",
+          "support",
+          "facilitate",
+          "benefit"
+        ],
+        "antonyms": [
+          "hinder",
+          "obstruct",
+          "impede",
+          "thwart",
+          "hamper"
+        ]
+      },
+      "homophones": [],
+      "id": 3
+    }
+  ]
+}

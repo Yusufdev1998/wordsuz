@@ -1,0 +1,40 @@
+  {
+  "word": "[Word in English]",
+  "uzbek": "[Word in Uzbek in different part of speeches]",
+  "pronunciation": "[Phonetic UK Pronunciation as in Oxford]",
+  "meanings": [
+    {
+      "partOfSpeech": "[Part of Speech 1]",
+      "definition": {
+        "english": "[English Definition for Part of Speech 1]",
+        "uzbek": "[Uzbek Translation of the Definition for Part of Speech 1]"
+      },
+      "example": {
+        "english": "[English Example Sentence for Part of Speech 1]",
+        "uzbek": "[Uzbek Translation of the Example Sentence for Part of Speech 1]"
+      }
+    },
+    {
+      // Repeat for additional parts of speech (if any)
+      "partOfSpeech": "[Part of Speech 2]",
+      "definition": {
+        "english": "[English Definition for Part of Speech 2]",
+        "uzbek": "[Uzbek Translation of the Definition for Part of Speech 2]"
+      },
+      "example": {
+        "english": "[English Example Sentence for Part of Speech 2]",
+        "uzbek": "[Uzbek Translation of the Example Sentence for Part of Speech 2]"
+      }
+    }
+  ],
+  "additionalElements": {
+    "synonyms": ["[Synonym1]", "[Synonym2]", "..."],
+    "antonyms": ["[Antonym1]", "[Antonym2]", "..."],
+    // Include other additional elements if needed
+  },
+  "homophones": ["[Homophone1]", "[Homophone2]", "..."],
+  "preferredDictionaryStyle": "Oxford",
+  "translationRequired": "Yes",
+  "languageForTranslation": "Uzbek"
+}
+  only return result json

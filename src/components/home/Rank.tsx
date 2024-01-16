@@ -4,11 +4,9 @@ const Rank = () => {
   return (
     <div className="flex items-center">
       <Icon
-        material={
-          <GiRank1 style={{ color: "#005BC1", fontSize: 25 }}></GiRank1>
-        }
-        badgeColors={{ bg: "bg-green-600" }}
-        badge={0}
+        material={<GiRank1 className="text-amber-600 text-4xl" />}
+        badgeColors={{ bg: "bg-primary" }}
+        badge={125}
       ></Icon>
     </div>
   );

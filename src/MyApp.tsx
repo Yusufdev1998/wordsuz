@@ -7,6 +7,7 @@ import { Provider } from "react-redux";
 import { store } from "./redux/store";
 import PracticeWord from "./pages/PracticeWord";
 import PracticeWordGroup from "./pages/PracticeWordGroup";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
 const router = createBrowserRouter([
   {
@@ -23,12 +24,15 @@ const router = createBrowserRouter([
   },
 ]);
 
+const queryClient = new QueryClient();
 const MyApp = () => {
   return (
     <Provider store={store}>
-      <App theme="material">
-        <RouterProvider router={router}></RouterProvider>
-      </App>
+      <QueryClientProvider client={queryClient}>
+        <App theme="material">
+          <RouterProvider router={router}></RouterProvider>
+        </App>
+      </QueryClientProvider>
     </Provider>
   );
 };

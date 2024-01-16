@@ -1,11 +1,24 @@
 import { BlockTitle, Button, List, ListItem } from "konsta/react";
 import { FcNext, FcSpeaker } from "react-icons/fc";
-import { FaStar } from "react-icons/fa";
+
 import AddWordBtn from "./AddWordBtn";
+import { useQuery } from "@tanstack/react-query";
+import axios from "axios";
+import { IWord } from "../../hooks/useFindWord";
+import { RiStarLine } from "react-icons/ri";
+
+async function getWords() {
+  const res = await axios.get("http://localhost:3000/user_bank");
+  return res.data;
+}
 
 const Main = () => {
+  const { data } = useQuery({
+    queryKey: ["words"],
+    queryFn: getWords,
+  });
   return (
-    <main>
+    <main className="pb-12">
       <AddWordBtn />
       <BlockTitle>
         Yangi so'zlar{" "}
@@ -13,82 +26,31 @@ const Main = () => {
           Mashq qilish
         </Button>
       </BlockTitle>
-      <List strong outline dividersMaterial className="pb-12">
-        <ListItem
-          media={
-            <FcSpeaker
-              onClick={(e: any) => {
-                e.stopPropagation();
-                console.log("hi");
-              }}
-              className="w-5 h-5 cursor-pointer"
-            />
-          }
-          onClick={() => console.log("hello")}
-          header="Name"
-          title="John Doe"
-          after={
-            <div className="flex items-center">
-              <FaStar className="text-yellow-400 text-xl"></FaStar> <FcNext />
-            </div>
-          }
-        />
-        <ListItem
-          media={<FcSpeaker className="w-5 h-5" />}
-          header="Phone"
-          title="+7 90 111-22-3344"
-          after="Edit"
-          chevronIcon={<FcNext />}
-        />
-        <ListItem
-          header="Email"
-          title="john@doe"
-          footer="Home"
-          after="Edit"
-          media={<FcSpeaker className="w-5 h-5" />}
-          chevronIcon={<FcNext />}
-        />
-        <ListItem
-          header="Email"
-          title="john@konsta"
-          footer="Work"
-          after="Edit"
-          media={<FcSpeaker className="w-5 h-5" />}
-          chevronIcon={<FcNext />}
-        />
-        <ListItem
-          header="Email"
-          title="john@konsta"
-          footer="Work"
-          after="Edit"
-          media={<FcSpeaker className="w-5 h-5" />}
-          chevronIcon={<FcNext />}
-        />
-        <ListItem
-          header="Email"
-          title="john@konsta"
-          footer="Work"
-          after="Edit"
-          media={<FcSpeaker className="w-5 h-5" />}
-          chevronIcon={<FcNext />}
-        />
-
-        <ListItem
-          header="Email"
-          title="john@konsta"
-          footer="Work"
-          after="Edit"
-          media={<FcSpeaker className="w-5 h-5" />}
-          chevronIcon={<FcNext />}
-        />
-        <ListItem
-          header="Email"
-          title="john@konsta"
-          footer="Work 2"
-          after="Edit"
-          media={<FcSpeaker className="w-5 h-5" />}
-          chevronIcon={<FcNext />}
-        />
+      <List strong dividersMaterial>
+        {data?.map((word: IWord) => (
+          <ListItem
+            media={
+              <FcSpeaker
+                onClick={(e: MouseEvent) => {
+                  e.stopPropagation();
+                  console.log("hi");
+                }}
+                className="w-5 h-5 cursor-pointer"
+              />
+            }
+            onClick={() => console.log("hello")}
+            header={word.pronunciation}
+            title={word.word}
+            footer={word.uzbek.join(", ")}
+            after={
+              <div className="flex items-center">
+                <RiStarLine className="text-lg text-slate-400" />
+                <RiStarLine className="text-lg text-slate-400" />
+                <RiStarLine className="text-lg text-slate-400" /> <FcNext />
+              </div>
+            }
+          />
+        ))}
       </List>
     </main>
   );
