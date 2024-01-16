@@ -10,7 +10,9 @@ const Home = () => {
     <>
       <Page>
         <MyNavbar />
+        <div className="back"></div>
         <Main />
+
         <FooterNav />
       </Page>
       <AddWordPopup />
