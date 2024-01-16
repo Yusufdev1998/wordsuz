@@ -1,5 +1,5 @@
 import { Navbar, NavbarBackLink, Page, Popup, Searchbar } from "konsta/react";
-import WordCard from "./WordCard";
+// import WordCard from "./WordCard";
 
 const WordPopup = () => {
   return (
@@ -10,7 +10,7 @@ const WordPopup = () => {
           title="So'z qo'shish"
           subnavbar={<Searchbar placeholder={"Qidirish..."} />}
         ></Navbar>
-        <WordCard />
+        {/* <WordCard /> */}
       </Page>
     </Popup>
   );
